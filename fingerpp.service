@@ -1,0 +1,12 @@
+[Unit]
+Description=FingerPP Biometric Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/fingerpp/bin/fingerpp --bus=system --filter-before-ssim=true --min-score=0.2
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
