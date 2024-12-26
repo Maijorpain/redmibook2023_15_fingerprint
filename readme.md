@@ -20,7 +20,7 @@ Navigate to the repository directory and execute the installation script:
 ```bash
 cd redmibook2023_15_fingerprint
 chmod +x install.sh
-./install.sh
+sudo ./install.sh
 ```
 
 ---
